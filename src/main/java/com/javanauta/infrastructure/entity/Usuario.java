@@ -37,17 +37,17 @@ public class Usuario implements UserDetails {
 
 
     @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
+    public Collection<? extends GrantedAuthority> getAuthorities(){
         return List.of();
     }
 
     @Override
-    public @Nullable String getPassword() {
+    public @Nullable String getPassword(){
         return senha;
     }
 
     @Override
-    public String getUsername() {
+    public String getUsername(){
         return email;
     }
 }
